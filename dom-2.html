@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* .ParentClass{
+        background-color: black;
+        color: white;
+       } */
+    </style>
+</head>
+<body style="background-color: black; color: white;" >
+    <div class="ParentClass">
+        <div class="Numbers">One</div>
+        <div class="Numbers">Two</div>
+        <div class="Numbers">Three</div>
+        <div class="Numbers">Four</div>
+    </div>
+    <script>
+        let MyLists = document.querySelector('.ParentClass')
+        // console.log(MyLists.children);
+        for (let i = 0; i < MyLists.children.length; i++) {
+            // console.log(MyLists.children[i]); 
+        }
+        let MyPrint = document.querySelector('.Numbers')
+        console.log(MyPrint);
+        console.log(MyPrint.nextElementSibling);
+        console.log(MyPrint.parentNode);
+        
+        
+        
+        
+    </script>
+</body>
+</html>
