@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+<ul class="languages">
+    <li>Python</li>
+</ul>
+<script>
+    function Addelement(Langname) {
+       let li = document.createElement('li')
+       li.innerHTML = `${Langname}`
+        document.querySelector(".languages").appendChild(li)
+        
+    }
+    Addelement("Typescript")
+    Addelement('Jaava')
+</script>
+</body>
+</html>
